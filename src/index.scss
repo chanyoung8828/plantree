@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "Noto_Sans_KR";
+  src: url(./fonts/Noto_Sans_KR/NotoSansKR-VariableFont_wght.ttf);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.main-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .list {
+    font-family: "Noto_Sans_KR";
+  }
+}
