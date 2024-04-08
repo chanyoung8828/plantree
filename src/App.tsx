@@ -1,9 +1,11 @@
-import { TodoList } from "./TodoList/TodoList";
+import { MakeToDo } from "./Components/MakeToDo/MakeToDo";
+import Title from "./Components/Title/Title";
 
 function App() {
   return (
-    <div className="App">
-      <TodoList />
+    <div className="main-container">
+      <Title />
+      <MakeToDo />
     </div>
   );
 }

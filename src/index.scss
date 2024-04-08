@@ -3,6 +3,11 @@
   src: url(./fonts/Noto_Sans_KR/NotoSansKR-VariableFont_wght.ttf);
 }
 
+@font-face {
+  font-family: "Roboto";
+  src: url(./fonts/Roboto/Roboto-Bold.ttf);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -12,8 +17,4 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  .list {
-    font-family: "Noto_Sans_KR";
-  }
 }
