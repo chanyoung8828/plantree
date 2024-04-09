@@ -1,0 +1,29 @@
+.list-container {
+  .icon {
+    color: #91d086; // checked가 'checked'일 때 색상
+    .checked {
+      display: none; // checked 클래스가 있을 때 숨김
+    }
+    :hover {
+      cursor: pointer; // 호버 효과
+    }
+  }
+  .content {
+    text-decoration: line-through; // checked가 'checked'일 때 텍스트에 줄 긋기
+  }
+  .small {
+    margin: 0 20px 0 0; // 여백 설정
+  }
+  .save-modify {
+    padding: 0; // 패딩 없음
+    margin: 0 15px 0 0; // 여백 설정
+    font-size: 18px; // 폰트 크기
+    :hover {
+      cursor: pointer; // 호버 효과
+    }
+  }
+
+  input {
+    font-size: 18px; // 폰트 크기
+  }
+}

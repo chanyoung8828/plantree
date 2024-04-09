@@ -3,7 +3,8 @@ import { toDoArrState } from "../../atom";
 import { useRecoilState } from "recoil";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
-import { EmptyInputModal } from "../Modals/EmptyInputModal";
+import { EmptyInputModal } from "../Modals/EmptyInputModal/EmptyInputModal";
+import "./MakeToDo.scss";
 
 export const MakeToDo = () => {
   const [listArr, setListArr] = useRecoilState(toDoArrState);
@@ -35,7 +36,6 @@ export const MakeToDo = () => {
     <div className="make-todo-container">
       <div className="make-todo-box">
         <div className="make-todo-input">
-          <FontAwesomeIcon icon={faPlus} />
           <input
             ref={inputRef}
             placeholder="할 일을 입력해주세요"
@@ -51,7 +51,14 @@ export const MakeToDo = () => {
             spellCheck="false"
           />
         </div>
-        <button>저장</button>
+        <button
+          onClick={() => {
+            inputToDo !== "" ? clickSaveBtn() : handleEmptyInputModal();
+            if (inputRef.current !== null) inputRef.current.focus();
+          }}
+        >
+          <FontAwesomeIcon icon={faPlus} />
+        </button>
       </div>
       <EmptyInputModal
         show={showEmptyInputModal}

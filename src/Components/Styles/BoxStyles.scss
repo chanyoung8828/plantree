@@ -1,0 +1,23 @@
+.BoxStyle {
+  display: flex;
+  justify-content: space-between;
+  width: inherit;
+  color: #000;
+}
+
+.make-to-do {
+  position: absolute;
+  bottom: 0px;
+}
+
+.list-item {
+  border-bottom: 1px solid #000;
+}
+
+.title {
+  font-size: 30px;
+}
+
+.icon {
+  margin: 0 9px 0 18.8px;
+}
