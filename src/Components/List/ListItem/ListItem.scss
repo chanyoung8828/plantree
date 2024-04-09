@@ -15,15 +15,15 @@
     margin: 0 20px 0 0; // 여백 설정
   }
   .save-modify {
-    padding: 0; // 패딩 없음
-    margin: 0 15px 0 0; // 여백 설정
-    font-size: 18px; // 폰트 크기
+    padding: 0;
+    margin: 0 15px 0 0;
+    font-size: 18px;
     :hover {
-      cursor: pointer; // 호버 효과
+      cursor: pointer;
     }
   }
 
   input {
-    font-size: 18px; // 폰트 크기
+    font-size: 18px;
   }
 }
