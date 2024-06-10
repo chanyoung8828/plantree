@@ -50,8 +50,14 @@
     ]
   },
   "devDependencies": {
+    "@eslint/compat": "^1.0.3",
+    "@eslint/js": "^9.4.0",
     "@types/react-fontawesome": "^1.6.8",
     "css-loader": "^7.0.0",
-    "sass-loader": "^14.1.1"
+    "eslint": "^9.4.0",
+    "eslint-plugin-react": "^7.34.2",
+    "globals": "^15.4.0",
+    "sass-loader": "^14.1.1",
+    "typescript-eslint": "^7.12.0"
   }
 }
